@@ -23,6 +23,7 @@ app.all('/*', async (req, res) => {
       return res.status(400).json({
         "title": "CORS Proxy Error - Required parameter is missing",
         "detail": "The parameter: url was not provided",
+        "usage": "https://corsproxy-gateway.vercel.app/?url=<YOUR URL>",
       }) 
     }
     
